@@ -1,0 +1,121 @@
+[2017-11-06T18:37:52,134][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [aiservice_es_node1] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.bootstrap.BootstrapException: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: org.elasticsearch.bootstrap.BootstrapException: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:170) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214) ~[?:1.8.0_151]
+	at java.nio.file.Files.newByteChannel(Files.java:361) ~[?:1.8.0_151]
+	at java.nio.file.Files.newByteChannel(Files.java:407) ~[?:1.8.0_151]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384) ~[?:1.8.0_151]
+	at java.nio.file.Files.newInputStream(Files.java:152) ~[?:1.8.0_151]
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:114) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:76) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:168) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+[2017-11-06T18:38:00,741][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [aiservice_es_node1] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.bootstrap.BootstrapException: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: org.elasticsearch.bootstrap.BootstrapException: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:170) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: /cmcc/software/elasticsearch-5.6.3/plugins/elasticsearch-analysis-ik-5.6.3.zip/plugin-descriptor.properties: Not a directory
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107) ~[?:1.8.0_151]
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214) ~[?:1.8.0_151]
+	at java.nio.file.Files.newByteChannel(Files.java:361) ~[?:1.8.0_151]
+	at java.nio.file.Files.newByteChannel(Files.java:407) ~[?:1.8.0_151]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384) ~[?:1.8.0_151]
+	at java.nio.file.Files.newInputStream(Files.java:152) ~[?:1.8.0_151]
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:114) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:76) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:168) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+[2017-11-06T18:38:14,307][INFO ][o.e.n.Node               ] [aiservice_es_node1] initializing ...
+[2017-11-06T18:38:14,403][INFO ][o.e.e.NodeEnvironment    ] [aiservice_es_node1] using [1] data paths, mounts [[/ (/dev/mapper/vg0-lv_root)]], net usable_space [21gb], net total_space [24.9gb], spins? [possibly], types [ext4]
+[2017-11-06T18:38:14,403][INFO ][o.e.e.NodeEnvironment    ] [aiservice_es_node1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-11-06T18:38:14,404][INFO ][o.e.n.Node               ] [aiservice_es_node1] node name [aiservice_es_node1], node ID [Xep6-b29R7iVtzYNJ_kSeg]
+[2017-11-06T18:38:14,405][INFO ][o.e.n.Node               ] [aiservice_es_node1] version[5.6.3], pid[18805], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Linux/2.6.32-696.el6.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2017-11-06T18:38:14,405][INFO ][o.e.n.Node               ] [aiservice_es_node1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/cmcc/software/elasticsearch-5.6.3]
+[2017-11-06T18:38:15,341][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [aggs-matrix-stats]
+[2017-11-06T18:38:15,341][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [ingest-common]
+[2017-11-06T18:38:15,341][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-expression]
+[2017-11-06T18:38:15,341][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-groovy]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-mustache]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-painless]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [parent-join]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [percolator]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [reindex]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [transport-netty3]
+[2017-11-06T18:38:15,342][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [transport-netty4]
+[2017-11-06T18:38:15,343][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded plugin [analysis-ik]
+[2017-11-06T18:38:16,695][INFO ][o.e.d.DiscoveryModule    ] [aiservice_es_node1] using discovery type [zen]
+[2017-11-06T18:38:17,321][INFO ][o.e.n.Node               ] [aiservice_es_node1] initialized
+[2017-11-06T18:38:17,322][INFO ][o.e.n.Node               ] [aiservice_es_node1] starting ...
+[2017-11-06T18:38:17,499][INFO ][o.e.t.TransportService   ] [aiservice_es_node1] publish_address {172.22.16.87:9300}, bound_addresses {172.22.16.87:9300}
+[2017-11-06T18:38:17,521][INFO ][o.e.b.BootstrapChecks    ] [aiservice_es_node1] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2017-11-06T18:38:26,804][INFO ][o.e.c.s.ClusterService   ] [aiservice_es_node1] detected_master {aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300}, added {{aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300},}, reason: zen-disco-receive(from master [master {aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300} committed version [3]])
+[2017-11-06T18:38:26,837][INFO ][o.e.h.n.Netty4HttpServerTransport] [aiservice_es_node1] publish_address {172.22.16.87:9200}, bound_addresses {172.22.16.87:9200}
+[2017-11-06T18:38:26,837][INFO ][o.e.n.Node               ] [aiservice_es_node1] started
+[2017-11-06T18:38:58,497][INFO ][o.e.n.Node               ] [aiservice_es_node1] stopping ...
+[2017-11-06T18:38:58,534][INFO ][o.e.n.Node               ] [aiservice_es_node1] stopped
+[2017-11-06T18:38:58,534][INFO ][o.e.n.Node               ] [aiservice_es_node1] closing ...
+[2017-11-06T18:38:58,544][INFO ][o.e.n.Node               ] [aiservice_es_node1] closed
+[2017-11-06T18:39:07,674][INFO ][o.e.n.Node               ] [aiservice_es_node1] initializing ...
+[2017-11-06T18:39:07,765][INFO ][o.e.e.NodeEnvironment    ] [aiservice_es_node1] using [1] data paths, mounts [[/ (/dev/mapper/vg0-lv_root)]], net usable_space [21gb], net total_space [24.9gb], spins? [possibly], types [ext4]
+[2017-11-06T18:39:07,765][INFO ][o.e.e.NodeEnvironment    ] [aiservice_es_node1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-11-06T18:39:07,767][INFO ][o.e.n.Node               ] [aiservice_es_node1] node name [aiservice_es_node1], node ID [Xep6-b29R7iVtzYNJ_kSeg]
+[2017-11-06T18:39:07,767][INFO ][o.e.n.Node               ] [aiservice_es_node1] version[5.6.3], pid[18928], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Linux/2.6.32-696.el6.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2017-11-06T18:39:07,767][INFO ][o.e.n.Node               ] [aiservice_es_node1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/cmcc/software/elasticsearch-5.6.3]
+[2017-11-06T18:39:08,631][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [aggs-matrix-stats]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [ingest-common]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-expression]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-groovy]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-mustache]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [lang-painless]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [parent-join]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [percolator]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [reindex]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [transport-netty3]
+[2017-11-06T18:39:08,632][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded module [transport-netty4]
+[2017-11-06T18:39:08,633][INFO ][o.e.p.PluginsService     ] [aiservice_es_node1] loaded plugin [analysis-ik]
+[2017-11-06T18:39:10,022][INFO ][o.e.d.DiscoveryModule    ] [aiservice_es_node1] using discovery type [zen]
+[2017-11-06T18:39:10,686][INFO ][o.e.n.Node               ] [aiservice_es_node1] initialized
+[2017-11-06T18:39:10,687][INFO ][o.e.n.Node               ] [aiservice_es_node1] starting ...
+[2017-11-06T18:39:10,869][INFO ][o.e.t.TransportService   ] [aiservice_es_node1] publish_address {172.22.16.87:9300}, bound_addresses {172.22.16.87:9300}
+[2017-11-06T18:39:10,881][INFO ][o.e.b.BootstrapChecks    ] [aiservice_es_node1] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2017-11-06T18:39:18,056][INFO ][o.e.c.s.ClusterService   ] [aiservice_es_node1] detected_master {aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300}, added {{aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300},}, reason: zen-disco-receive(from master [master {aiservice_es_node2}{YmN_4nySQY-bV48ABPrbsA}{qBtaZ8awRryfWsoXQFaOgw}{172.22.16.88}{172.22.16.88:9300} committed version [5]])
+[2017-11-06T18:39:18,123][INFO ][o.e.h.n.Netty4HttpServerTransport] [aiservice_es_node1] publish_address {172.22.16.87:9200}, bound_addresses {172.22.16.87:9200}
+[2017-11-06T18:39:18,125][INFO ][o.e.n.Node               ] [aiservice_es_node1] started
+[2017-11-06T19:00:58,809][INFO ][o.w.a.d.Monitor          ] try load config from /cmcc/software/elasticsearch-5.6.3/config/analysis-ik/IKAnalyzer.cfg.xml
+[2017-11-06T19:00:58,810][INFO ][o.w.a.d.Monitor          ] try load config from /cmcc/software/elasticsearch-5.6.3/plugins/ik/config/IKAnalyzer.cfg.xml
+[2017-11-06T19:00:59,088][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom/mydict.dic
+[2017-11-06T19:00:59,089][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom/single_word_low_freq.dic
+[2017-11-06T19:00:59,090][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom/sougou.dic
+[2017-11-06T19:00:59,295][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom/ext_stopword.dic
+[2017-11-06T19:00:59,295][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom/chinese_stopword.txt
